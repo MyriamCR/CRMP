@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto introductorio para aprender la estructura y las etiquetas principales de HTML.">
+    <meta name="author" content="CRMP">
+    <!-- Texto que aparece en la pestaña del navegador -->
+    <title>Mi primer proyecto HTML</title>
+</head>
+<body id="inicio">
+    
+        <!-- Encabezado de la página-->
+        <header>
+            <h1>Mi primer proyecto de HTML</h1>
+            <P>Un sitio para practicar la estructura y las etiquetas principales de HTML5.</P>
+            
+            <!-- Menu con enlaces hacia secciones de esta misma página -->
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#acerca-de">Acerca de mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#horarios">Horario</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main>
+        <section id="aerca-de">
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaMsPJq7ha8VNIkig6DpxY98BejFW9BzhgUDNpATMreQ&s=10" alt="CRMP" width="160px">
+                <figcaption>Alumna de PrograWEB</figcaption>
+            </figure>
+            <p>Mi nombre es <strong>Miriam</strong> y actulmente estoy tomando el curso de programación WEB con <abbr title="HyperText Markup Language">HTML</abbr></p>
+            <P>Me interesa especialmente la <em>creación de contenido y experiencias digitales</em> y quiero aprender a desarrollar sitios accesibles y bien desarrollados</P>
+        </section>
+        <hr>
+        <section id="habilidades">
+            <h2>Habilidades e intereses</h2>
+
+            <h3>Mis intereses</h3>
+            <ul>
+                <li>Programación</li>
+                <li>Videojuegos</li>
+                <li>Animación</li>
+                <li>UX/UI</li>
+            </ul>
+
+            <H3>Mis metas de aprendizaje</H3>
+            <ol>
+                <li>Compender la estructura de HTML</li>
+                <li>Aprender a modificar la apariencia con CSS</li>
+                <li>Conectar mi página con una base de datos(MySQL)</li>
+                <li>Aprender a programar en PHP</li>
+            </ol>
+        </section>
+        <hr>
+        <section id="proyectos">
+            <h2>Mis proyectos</h2>
+            <article>
+                <h3>Pagína personal</h3>
+                <p>En este proyeto presentaé información sobre mis intereses, habilidades y objetivos profesionales</p>
+                <a href="https://github.com" target="_blank">Visitar Github</a>
+            </article>
+
+            <article>
+                <h3>Sitio de tema favorito</h3>
+                <p>Crearé un sitio informativo sobre películas, videojuegos, artistas, libros o temas de mi elección.</p>
+            </article>
+        </section>
+        <hr>
+        <section id="horarios">
+            <h2>Horarios</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</p>
+        </section>
+        <hr>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <address>
+            Elaborado por CRMP <br>
+            Correo: <a href="mailto:crmp@gmail.com">crmp@gmail.com</a>
+        </address>
+        <p><a href="#inicio">HOME</a></p>
+    </footer>
+    
+</body>
+</html>
