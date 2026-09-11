@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Estudiante - Juan Pérez</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 30px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        /* Estilo de la tabla de detalle */
+        .tabla-detalle {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 2px solid #555;
+        }
+
+        .tabla-detalle td {
+            border: 2px solid #777;
+            padding: 12px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        /* Filas especiales de encabezado interno y ciclo */
+        .encabezado-carrera, 
+        .pie-ciclo,
+        .pie-inicio {
+            background-color: #d3d3d3;
+            font-weight: bold;
+        }
+
+        /* Caja de imagen 300x300 */
+        .img-detalle {
+            width: 300px;
+            height: 300px;
+        }   
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Estudiantes de Programación WEB (CUCEA)</h1>
+    </header>
+
+    <main>
+
+        <section>
+
+            <table class="tabla-detalle">
+                <thead>
+                    <tr>           
+                        <td colspan="5" class="encabezado-carrera">
+                            <strong>Ingeniería en Telemática</strong>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Fila 1: Foto a la izquierda (ocupa 4 filas hacia abajo) y Nombre a la derecha -->
+                    <tr>
+                        <td rowspan="4" style="width: 320px;">
+                            <img src="https://pbs.twimg.com/media/GMg9bgqWUAA4ieu.jpg" alt="Foto de Adriana Ramos" class="img-detalle">
+                        </td>
+                        <td colspan="4" class="nombre-estudiante">Juan Pérez</td>
+                    </tr>
+                    
+                    <!-- Fila 2: Datos generales -->
+                    <tr>
+                        <td><strong>Código:</strong> 223365098</td>
+                        <td><strong>Estatus:</strong> ACTIVO</td>
+                        <td><strong>Ingreso:</strong> 2025-A</td>            
+                        <td><strong>Edad:</strong> 20</td>
+                    </tr>
+
+                    <!-- Fila 3: Teléfono y Correo -->
+                    <tr>
+                        <td colspan="2"><strong>Tel:</strong> 33 56 78 09 32</td>
+                        <td colspan="2">
+                            <strong>Correo:</strong><br>
+                            juanperez@cucei.udg.mx
+                        </td>
+                    </tr>
+
+                    <!-- Fila 4: Promedio y Créditos -->
+                    <tr>
+                        <td colspan="3"><strong>Promedio general:</strong> 86</td>
+                        <td><strong>Total de Créditos:</strong> 201</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="pie-ciclo">Ciclo escolar 2026A</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="pie-inicio">
+                            <a href="index.html" title="Volver al Inicio">
+                                &#127968; <!-- Icono de casa en Unicode -->
+                            </a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </section>
+    </main>
+
+</body>
+</html>

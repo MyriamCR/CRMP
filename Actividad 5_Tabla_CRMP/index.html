@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes de Programación WEB (CUCEA)</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 30px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        /* Estilos generales de la tabla */ 
+        .tabla-estudiantes {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 2px solid #555;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .tabla-estudiantes th, 
+        .tabla-estudiantes td {
+            border: 2px solid #777;
+            padding: 12px 8px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        /* Encabezado y Pie de página con fondo gris */
+        .tabla-estudiantes thead th, 
+        .tabla-estudiantes tfoot td {
+            background-color: #d3d3d3;
+            color: #000;
+        }
+
+        .tabla-estudiantes thead th {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        
+        /* Medidas de la imagen 50x50 */
+        .img-tabla {
+            width: 50px;
+            height: 50px;
+            
+        }
+
+        /* Estilo de enlaces */
+        a {
+            color: #4b0082;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Estudiantes de Programación WEB (CUCEA)</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <table class="tabla-estudiantes">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Carrera</th>
+                        <th scope="col">Promedio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="https://i.pinimg.com/736x/2f/56/f4/2f56f41484b73e8c891ef6733f793fab.jpg" alt="Foto de Adriana Ramos" class="img-tabla"></td>
+                        <td><a href="juan.html">Juan Pérez</a></td>
+                        <td>20</td>
+                        <td>Ingeniería en Telemática</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="https://i.pinimg.com/736x/69/7b/1c/697b1c55b37fc49be2db37f24ebb94a2.jpg" alt="Foto de Adriana Ramos" class="img-tabla"></td>
+                        <td><a href="maria.html">María García</a></td>
+                        <td>22</td>
+                        <td>Ingeniería en Informática</td>
+                        <td>79</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="https://i.pinimg.com/736x/bc/cb/e1/bccbe18308fa072b0080210e653de357.jpg" alt="Foto de Adriana Ramos" class="img-tabla"></td>
+                        <td><a href="carlos.html">Carlos López</a></td>
+                        <td>21</td>
+                        <td>Licenciatura en Tecnologías de la Información</td>
+                        <td>82</td>                              
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><img src="https://i.pinimg.com/474x/6c/ec/c0/6cecc06250e2c33a298c567367cfae10.jpg" alt="Foto de Adriana Ramos" class="img-tabla"></td>
+                        <td><a href="ana.html">Ana Martínez</a></td>
+                        <td>19</td>
+                        <td>Ingeniería en Mecatrónica</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><img src="https://i.redd.it/best-thing-character-has-done-2-pearl-v0-ybgeeokiiovd1.jpg?width=500&format=pjpg&auto=webp&s=37cd12b8f56d9e3a9f95535c5de2c7670814d6ce" alt="Foto de Adriana Ramos" class="img-tabla"></td>
+                        <td><a href="adriana.html">Adriana Ramos</a></td>
+                        <td>22</td>
+                        <td>Ingeniería en Computación</td>
+                        <td>98</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Ciclo escolar 2026A</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
+

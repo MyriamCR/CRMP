@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Estudiante - Ana Martínez</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 30px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        /* Estilo de la tabla de detalle */
+        .tabla-detalle {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 2px solid #555;
+        }
+
+        .tabla-detalle td {
+            border: 2px solid #777;
+            padding: 12px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        /* Filas especiales de encabezado interno y ciclo */
+        .encabezado-carrera, 
+        .pie-ciclo,
+        .pie-inicio {
+            background-color: #d3d3d3;
+            font-weight: bold;
+        }
+
+        /* Caja de imagen 300x300 */
+        .img-detalle {
+            width: 300px;
+            height: 300px;
+        }   
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Estudiantes de Programación WEB (CUCEA)</h1>
+    </header>
+
+    <main>
+        
+        <section>
+            <table class="tabla-detalle">
+                <thead>
+                    <tr>
+                        <td colspan="5" class="encabezado-carrera">
+                            <strong>Ingeniería en Mecatrónica</strong>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Fila 1: Foto a la izquierda (ocupa 4 filas hacia abajo) y Nombre a la derecha -->
+                    <tr>
+                        <td rowspan="4" style="width: 320px;">
+                            <img src="https://preview.redd.it/whats-your-opinion-on-the-new-peridot-v0-gesubgzkllbc1.jpg?width=511&format=pjpg&auto=webp&s=26da105493e481327f2eaec2cf2f4de475d11dd1" alt="Foto de Adriana Ramos" class="img-detalle">
+                        </td>
+                        <td colspan="4" class="nombre-estudiante">Ana Martínez</td>
+                    </tr>
+                    
+                    <!-- Fila 2: Datos generales -->
+                    <tr>
+                        <td><strong>Código:</strong> 220094567</td>
+                        <td><strong>Estatus:</strong> ACTIVO</td>
+                        <td><strong>Ingreso:</strong> 2025-B</td>
+                        <td><strong>Edad:</strong> 19</td>
+                    </tr>
+
+                    <!-- Fila 3: Teléfono y Correo -->
+                    <tr>
+                        <td colspan="2"><strong>Tel:</strong> 33 29 09 34 68</td>
+                        <td colspan="2">
+                            <strong>Correo:</strong><br>
+                            anamartinez@cucei.udg.mx
+                        </td>
+                    </tr>
+
+                    <!-- Fila 4: Promedio y Créditos -->
+                    <tr>
+                        <td colspan="3"><strong>Promedio general:</strong> 92</td>
+                        <td><strong>Total de Créditos:</strong> 112</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="pie-ciclo">Ciclo escolar 2026A</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="pie-inicio">
+                            <a href="index.html" title="Volver al Inicio">
+                                &#127968; <!-- Icono de casa en Unicode -->
+                            </a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        
+    </main>
+
+</body>
+</html>
