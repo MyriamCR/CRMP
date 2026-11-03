@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* barra */
+.barra {
+    height: 42px;
+    background-color: #e5eff4;
+    display: grid;
+    align-items: center;
+    padding-left: 32px;
+}
+
+/* circulos */
+.controles {
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    gap: 25px;
+}
+.circulo {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.rojo {
+    background-color: #ed3155;
+}
+.amarillo {
+    background-color: #ffc629;
+}
+.verde {
+    background-color: #2da653;
+}
+
+/* contenido principal (sección central y area derecha) */
+.contenido {
+    height: calc(100vh - 42px);
+    padding: 13px;
+    display: grid;
+    grid-template-columns: 1fr 0.09fr;
+    gap: 13px;
+}
+
+/* dividir la area izquierda, morado arriba y la sección de abajo) */
+.principal {
+    display: grid;
+    grid-template-rows: 0.15fr 1fr;
+    gap: 13px;
+}
+.morado {
+    background-color: #9144ae;
+}
+
+/* dividir el area de naranja de la de las filas */
+.inferior {
+    display: grid;
+    grid-template-columns: 0.22fr 1fr;
+    gap: 13px;
+}
+.naranja {
+    background-color: #fa9826;
+}
+
+/* Área centro (Verde, Azules, Lila/Rojo) */
+.centro {
+    display: grid;
+    grid-template-rows: 0.35fr 0.60fr 1fr;
+    gap: 13px;
+}
+
+.verde-central {
+    background-color: #27a44e;
+}
+
+/* bloques azules */
+.azules {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+}
+.azul {
+    background-color: #42a4e5;
+}
+
+/* cuadros morados y rojos */
+.cuadros-inferior {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.4fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 13px;
+}
+.lila {
+    background-color: #ac87b3;
+}
+.rojo-bloque {
+    background-color: #ed4b32;
+}
+
+/* area derecha */
+.derecha {
+    background-color: #fa9826;
+}

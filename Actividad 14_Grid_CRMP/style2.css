@@ -1,0 +1,97 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* barra superior */
+.barra {
+    height: 42px;
+    background-color: #e5eff4;
+
+    display: grid;
+    align-items: center;
+    padding-left: 32px;
+}
+
+/* Circulos */
+.controles {
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    gap: 25px;
+}
+.circulo {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.rojo {
+    background-color: #ed3155;
+}
+.amarillo {
+    background-color: #ffc629;
+}
+.verde {
+    background-color: #2da653;
+}
+
+/* Contenido principal */
+.contenido {
+    height: calc(100vh - 42px);
+    padding: 13px;
+    display: grid;
+    grid-template-columns: 4.4fr 6.9fr 1fr; /*divide el contenido izquiera, centro y derecha */
+    gap: 13px;
+}
+
+/* área izquierda */
+.izquierda {
+    background-color: #ed4b32;
+}
+
+/* area central */
+.centro {
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.64fr;
+    gap: 13px;
+}
+
+.morado {
+    background-color: #9144ae;
+}
+
+/* fila del medio */
+.medio {
+    display: grid;
+    grid-template-columns: 0.38fr 1fr;
+    gap: 13px;
+}
+.verde-central {
+    background-color: #27a44e;
+}
+.apilados {
+    display: grid;
+    grid-template-rows: 0.64fr 1fr;
+    gap: 13px;
+}
+.azul {
+    background-color: #42a4e5;
+}
+.lila {
+    background-color: #ac87b3;
+}
+
+.naranja {
+    background-color: #fa9826;
+}
+
+
+/* área derecha */
+.derecha {
+    background-color: #27a44e;
+}
