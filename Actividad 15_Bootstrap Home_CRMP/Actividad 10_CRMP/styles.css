@@ -1,0 +1,68 @@
+/* Configuración general y contenedor principal */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #222222;
+  background-color: #ffffff;
+}
+
+/* Categoría / Miga de pan superior */
+span {
+  display: block;
+  color: #b71d24;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Título principal */
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.25;
+  color: #000000;
+  margin: 0 0 12px 0;
+}
+
+/* Metadatos (Autor y fecha) */
+div {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+/* Imagen principal con línea roja inferior */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 4px solid #b71d24;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los párrafos de texto */
+p {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+/* Estilos para negrita, cursiva y subrayado */
+p strong {
+    font-weight: bold;
+    color: #000000;
+}
+
+p em {
+    font-style: italic;
+    color: #666666;
+}
+
+p u {
+    text-decoration: underline;
+    color: #333333;
+    text-decoration: underline #b71d24;
+}

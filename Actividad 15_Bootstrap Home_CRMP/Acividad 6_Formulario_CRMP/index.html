@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Evento Universitario</title>
+</head>
+<body>
+
+    <header>
+        <h1>Congreso Universitario de Ciencia y Tecnología</h1>
+        <p>Formulario de inscripción para estudiantes.</p>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulario de Participantes</h2>
+            <p>Completa los siguientes campos con tu información para confirmar tu asistencia al evento.</p>
+
+            <form action="#" method="post">
+
+                <h3>Datos Personales</h3>
+
+                <p>
+                    <label for="nombre_completo">Nombre completo: </label><br>
+                    <input 
+                        type="text" 
+                        id="nombre_completo" 
+                        name="nombre_completo" 
+                        required 
+                        placeholder="Ej. Nancy Gutiérrez Gómez" 
+                        autocomplete="name" minlength="3" maxlength="100"
+                    >
+                </p>
+
+                <p>
+                    <label for="correo_electronico">Correo electrónico: </label><br>
+                    <input 
+                        type="email" 
+                        id="correo_electronico" 
+                        name="correo_electronico" 
+                        required 
+                        placeholder="ejemplo@alumnos.udg.mx" autocomplete="email"
+                    >
+                </p>
+                
+                <p>
+                    <label for="edad">Edad: </label><br>
+                    <input 
+                        type="number" 
+                        id="edad" 
+                        name="edad" 
+                        required 
+                        min="15" max="50" placeholder="Ej. 20"
+                    >
+                </p>
+
+                <p>
+                    <label for="fecha_nacimiento">Fecha de nacimiento: </label><br>
+                    <input 
+                        type="date" 
+                        id="fecha_nacimiento" 
+                        name="fecha_nacimiento" 
+                        required
+                    >
+                </p>
+
+                <hr>
+                <h3>Datos Académicos y de Asistencia</h3>
+                <p>
+                    <label for="carrera">Carrera: </label><br>
+                    <select id="carrera" name="carrera" required>
+                        <option value="" disabled selected>-- Licenciatura --</option>
+                        <option value="Administración">Administración</option>
+                        <option value="Administración Gubernamental y Políticas Públicas">Administración Gubernamental y Políticas Públicas</option>
+                        <option value="Contaduría Pública">Contaduría Pública</option>
+                        <option value="Economía">Economía</option>
+                        <option value="Gestión de Negocios Gastronómicos">Gestión de Negocios Gastronómicos</option>
+                        <option value="Gestión y Economía Ambiental">Gestión y Economía Ambiental</option>
+                        <option value="Ingeniería en Negocios">Ingeniería en Negocios</option>
+                        <option value="Mercadotecnia">Mercadotecnia</option>
+                        <option value="Negocios Internacionales">Negocios Internacionales</option>
+                        <option value="Recursos Humanos">Recursos Humanos</option>
+                        <option value="Relaciones Públicas y Comunicación">Relaciones Públicas y Comunicación</option>
+                        <option value="Turismo">Turismo :c</option>
+                        <option value="Tecnologías de Información">Tecnologías de Información </option>
+                    </select>
+                </p>
+                
+                <p>
+                    <label>Turno de asistencia: </label><br>
+                    <input type="radio" id="turno_matutino" name="turno" value="matutino" required>
+                    <label for="turno_matutino">Matutino</label>
+                    <br>
+                    <input type="radio" id="turno_vespertino" name="turno" value="vespertino" required>
+                    <label for="turno_vespertino">Vespertino</label>
+                </p>
+                <hr>
+                <h3>Confirmación y Términos</h3>
+
+                <p>
+                    <input type="checkbox" id="acepta_terminos" name="acepta_terminos" value="aceptado" required>
+                    <label for="acepta_terminos">
+                        Acepto los términos y condiciones de participación y el aviso de privacidad del evento. *
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar Registro</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

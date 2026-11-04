@@ -1,0 +1,131 @@
+
+body {
+  margin: 0;
+  padding: 30px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #252525;
+  background-color: #ffffff;
+}
+
+
+
+h1 {
+  margin: 20px 0 45px;
+  text-align: center;
+  color: #414064;
+  font-size: 36px;
+
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  
+}
+
+.tabla, .serie {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(48px, 1fr));
+  gap: 3px;
+  min-width: 915px;
+}
+
+.elemento {
+  position: relative;
+  
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #202020;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+/* casilla crezca con pasar el mouse */
+.elemento:hover {
+  z-index: 2;
+  transform: scale(1.12);
+  
+}
+
+.numero {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  font-size: 8px;
+}
+.simbolo {
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 22px;
+}
+.nombre {
+  font-size: 8px;
+  line-height: 10px;
+}
+
+/*colores para el tipo de elemento */
+.alcalino { 
+    background-color: #dc1e2e; 
+    color: #ffffff; 
+}
+.alcalinoterreo { 
+    background-color: #f9a51b; 
+    color: #ffffff; 
+}
+.transicion { 
+    background-color: #9fc1e2; 
+}
+.postransicion { 
+    background-color: #b995c8; 
+}
+.metaloide { 
+    background-color: #ffd000; 
+}
+.nometal { 
+    background-color: #9dc77f; 
+}
+.noble { 
+    background-color: #f3aec9; 
+}
+.lantanido { 
+    background-color: #289bd2; 
+    color: #ffffff; 
+}
+.actonoide { 
+    background-color: #75c9aa; 
+}
+.desconocido { 
+    background-color: #bfbfbf; 
+}
+
+
+.serie {
+  margin-top: 20px;
+}
+
+.leyenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 35px;
+  margin: 45px auto;
+  max-width: 800px;
+  font-size: 13px;
+}
+
+.leyenda div {
+  display: flex;
+  align-items: center;
+  min-width: 165px;
+  
+}
+
+.muestra {
+  width: 30px;
+  height: 30px;
+}
+
+
