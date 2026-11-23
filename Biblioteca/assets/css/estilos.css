@@ -1,0 +1,70 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #fffbfb;
+  
+}
+
+.navbar {
+    background-color: #d8c5f0; 
+    margin-bottom: 35px;       
+    padding: 15px;
+}
+
+/* login y registro */
+.formulario {
+    background-color: #eaf2ff; 
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 500px;          
+    margin: 0 auto;      /* Centra el formulario */
+}
+
+/*mensajes de error */
+.alert-danger {
+    background-color: #ffe0bd; 
+    color: #b3261e;             
+    border-color: #f5c28b;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+/* tarjetas libros y indicadores */
+.card {
+    border: 2px solid #d8a6b1; 
+    
+}
+.card-body {
+    background-color: #f5d8de;
+    border-radius: 10px;
+}
+
+/* enlace crear libro */
+.btn-subtle  {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* arregla el buscador */
+.mb-4 {
+    max-width: 400px;
+   
+}
+
+
+.footer {
+    background-color: #d8c5f0; 
+    padding: 15px 25px;
+    margin-top: 40px;
+}
+.footer-contenido {   /*acomodar los textos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
